@@ -1,17 +1,17 @@
 provider "aws" {
   version = "~> 3.0"
-  region  = "ap-south-1"
+  region  = "eu-west-1"
 }
 
 terraform {
   backend "s3" {
-    bucket = "jms-terraform-backend"
+    bucket = "bucket-for-app-18"
     key    = "jmsth_base.tfstate"
-    region = "ap-south-1"
+    region = "eu-west-1"
   }
 }
 resource "aws_ecr_repository" "myrepo" {
-  name                 = "nodeapp"
+  name                 = "testrepo"
 
   image_scanning_configuration {
     scan_on_push = true

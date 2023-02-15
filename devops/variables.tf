@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "us-east-2"
+  default     = "eu-west-1"
 }
 
 variable "ecs_task_execution_role_name" {
@@ -19,7 +19,7 @@ variable "az_count" {
 }
 variable "app_image" {
   description = "Docker image to run it the EC2 cluster"
-  default     = "149594765678.dkr.ecr.us-east-2.amazonaws.com/nodeapp"
+  default     = "613758335960.dkr.ecr.eu-west-1.amazonaws.com/nodeapp"
 }
 
 variable "app_port" {
